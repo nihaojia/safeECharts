@@ -1,0 +1,491 @@
+
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="media/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL STYLES --> 
+
+	<link href="media/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+
+	<link href="media/css/fullcalendar.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
+
+	<link href="media/css/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+
+	<!-- END PAGE LEVEL STYLES -->
+
+	<link rel="shortcut icon" href="media/image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+			<div class="container-fluid">
+
+				<!-- BEGIN LOGO -->
+
+				<a class="brand" href="index.html">
+
+				<img src="media/asset/logo1.png" alt="logo"/>
+
+				</a>
+
+				<!-- END LOGO -->
+
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+				<img src="media/image/menu-toggler.png" alt="" />
+
+				</a>          
+
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+
+				<ul class="nav pull-right">
+
+
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+
+					<li class="dropdown user">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+						<img alt="" src="media/image/avatar1_small.jpg" />
+
+						<span class="username">Bob Nilson</span>
+
+						<i class="icon-angle-down"></i>
+
+						</a>
+
+						<ul class="dropdown-menu">
+
+							<li><a href="extra_profile.html"><i class="icon-user"></i> My Profile</a></li>
+
+							<li><a href="page_calendar.html"><i class="icon-calendar"></i> My Calendar</a></li>
+
+							<li><a href="inbox.html"><i class="icon-envelope"></i> My Inbox(3)</a></li>
+
+							<li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
+
+							<li class="divider"></li>
+
+							<li><a href="extra_lock.html"><i class="icon-lock"></i> Lock Screen</a></li>
+
+							<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+
+						</ul>
+
+					</li>
+
+					<!-- END USER LOGIN DROPDOWN -->
+
+				</ul>
+
+				<!-- END TOP NAVIGATION MENU --> 
+
+			</div>
+
+		</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+	<!-- BEGIN CONTAINER -->
+	<div class="page-container">
+		<!-- BEGIN PAGE -->
+		<div class="page-content">
+			<div class="row-fluid">
+				<div class="span12">
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						     <div id="container" style="height: 800px;position:relative;"class="span12"></div>
+						<!--<div id="menu1" style=" width:300px;float:left;position:absolute;left:0;top:100px;">
+							 	<img src="media/asset/menu1.png"  />
+							 </div>
+							 
+							 
+							  <div id="menu2" style=" width:450px;float:right;position:absolute;left:1020px;top:100px;">
+							 	<img src="media/asset/menu2.png"  />
+							 </div>-->
+
+				</div>
+			</div>
+		</div>
+		<!-- END PAGE -->
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+
+	<!-- END FOOTER -->
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+	<script src="media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="media/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script src="media/js/jquery.flot.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.flot.resize.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.pulsate.min.js" type="text/javascript"></script>
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="media/js/app.js" type="text/javascript"></script>
+
+	<script src="media/js/index.js" type="text/javascript"></script>   
+	
+	
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+
+	<!-- END PAGE LEVEL SCRIPTS -->  
+
+	<script>
+
+		jQuery(document).ready(function() {    
+
+		   App.init(); // initlayout and core plugins
+	
+		});
+
+	</script>
+	<!-- END JAVASCRIPTS -->
+	
+<script type="text/javascript">
+	var dom = document.getElementById("container");
+	var myChart = echarts.init(dom);
+	var app = {};
+	option = null;
+	
+//	var canvas = document.createElement('canvas');
+//	var mapChart = echarts.init(canvas, null, {
+//	    width: 4096, height: 2048
+//	});
+//	mapChart.setOption({
+//	    series : [
+//	        {
+//	            type: 'map',
+//	            map: 'world',
+//	            
+//	            top: 0, left: 0,
+//	            right: 0, bottom: 0,
+//	            boundingCoords: [[-180, 90], [180, -90]],
+//              itemStyle: {
+//                  normal: {
+//                      borderWidth: 1,
+//                      borderColor: '#00BFFF',
+//                     	areaColor:'#8EE5EE'
+//                  }
+//              }
+////              ,regions: [{
+////			    	name: 'china',
+////			    	itemStyle: {
+////			        areaColor: 'red',
+////			        color: 'red'
+////			    	}
+////				}]
+//	        }
+//	    ]
+//	});
+
+	$.getJSON('media/json/flights.json', function (data) {
+	    var airports = data.airports.map(function (item) {
+	        return {
+	            coord: [item[3], item[4]]
+	        }
+	    });
+    function getAirportCoord(idx) {
+        return [data.airports[idx][3], data.airports[idx][4]];
+    }
+
+    // Route: [airlineIndex, sourceAirportIndex, destinationAirportIndex]
+    var routesGroupByAirline = {};
+    data.routes.forEach(function (route) {
+        var airline = data.airlines[route[0]];
+        var airlineName = airline[0];
+        if (!routesGroupByAirline[airlineName]) {
+            routesGroupByAirline[airlineName] = [];
+        }
+        routesGroupByAirline[airlineName].push(route);
+    });
+
+    var pointsData = [];
+    data.routes.forEach(function (airline) {
+        pointsData.push(getAirportCoord(airline[1]));
+        pointsData.push(getAirportCoord(airline[2]));
+    });
+
+    var series = data.airlines.map(function (airline) {
+        var airlineName = airline[0];
+      
+
+        var routes = routesGroupByAirline[airlineName];
+
+        if (!routes) {
+            return null;
+        }
+        
+    if(airlineName=='easyJet'){
+		    return {
+            type: 'lines3D',
+            name: airlineName,
+
+            effect: {
+                show: true,
+                trailWidth: 2,
+                trailLength: 0.15,
+                trailOpacity: 2,
+                trailColor: 'rgb(179, 255, 253)'
+            },
+
+            lineStyle: {
+                width: 1,
+                color: 'rgb(179, 255, 253)',
+                opacity: 0.1
+            },
+            blendMode: 'lighter',
+
+            data: routes.map(function (item) {
+                return [airports[item[1]].coord, airports[item[2]].coord];
+            })
+        };
+	}    
+      if(airlineName=='China Eastern Airlines'){
+		    return {
+            type: 'lines3D',
+            name: airlineName,
+
+            effect: {
+                show: true,
+                trailWidth: 2,
+                trailLength: 0.15,
+                trailOpacity: 2,
+                trailColor: 'rgb(86, 238, 230)'
+            },
+
+            lineStyle: {
+                width: 1,
+                color:'rgb(86, 238, 230)',
+                opacity: 0.1
+            },
+            blendMode: 'lighter',
+
+            data: routes.map(function (item) {
+                return [airports[item[1]].coord, airports[item[2]].coord];
+            })
+        };
+	}     
+	if(airlineName=='Air China'){
+		    return {
+            type: 'lines3D',
+            name: airlineName,
+
+            effect: {
+                show: true,
+                trailWidth: 2,
+                trailLength: 0.15,
+                trailOpacity: 2,
+                trailColor: 'rgb(100, 228, 143)'
+            },
+
+            lineStyle: {
+                width: 1,
+                color: 'rgb(100, 228, 143)',
+                //color: 'rgb(118, 233, 241)',
+                opacity: 0.1
+            },
+            blendMode: 'lighter',
+
+            data: routes.map(function (item) {
+                return [airports[item[1]].coord, airports[item[2]].coord];
+            })
+        };
+	}
+	
+	      
+	if(airlineName=='China Southern Airlines'){
+		    return {
+            type: 'lines3D',
+            name: airlineName,
+
+            effect: {
+                show: true,
+                trailWidth: 2,
+                trailLength: 0.15,
+                trailOpacity: 2,
+                trailColor: 'rgb(228, 52, 47)'
+            },
+
+            lineStyle: {
+                width: 1,
+                color: 'rgb(228, 52, 47)',
+                //color: 'rgb(118, 233, 241)',
+                opacity: 0.1
+            },
+            blendMode: 'lighter',
+
+            data: routes.map(function (item) {
+                return [airports[item[1]].coord, airports[item[2]].coord];
+            })
+        };
+	}
+	
+		      
+	
+    
+    }).filter(function (series) {
+        return !!series;
+    });
+    
+    series.push({
+        type: 'scatter3D',
+        coordinateSystem: 'globe',
+        blendMode: 'lighter',
+        symbolSize: 2,
+        itemStyle: {
+            color: 'rgb(50, 50, 150)',
+            opacity: 0.2
+        },
+        data: pointsData
+    });
+
+    myChart.setOption({
+        legend: {
+            selectedMode: 'single',
+            left: 'right',
+            data: Object.keys(routesGroupByAirline),
+            orient: 'vertical',
+            textStyle: {
+                color: '#fff'
+            },
+            show:false
+        },
+        globe: {
+            environment: 'media/asset/starfield2.jpg',
+     		baseTexture: 'media/asset/earth.jpg', //mapChart,
+            heightTexture: 'media/asset/bathymetry_bw_composite_4k.jpg',
+            displacementScale: 0.1,
+            displacementQuality: 'high',
+            //baseColor: '#000',
+            shading: 'realistic',
+            realisticMaterial: {
+                roughness: 0.2,
+                metalness: 0
+            },
+
+            postEffect: {
+                enable: true,
+                depthOfField: {
+                    enable: false,
+                    focalDistance: 150
+                }
+            },
+            temporalSuperSampling: {
+                enable: true
+            },
+            light: {
+                ambient: {
+                    intensity: 0
+                },
+                main: {
+                    intensity: 0.1,
+                    shadow: false
+                },
+                ambientCubemap: {
+                    texture: 'media/asset/lake.hdr',
+                    exposure: 1,
+                    diffuseIntensity: 0.1,
+                    specularIntensity: 0.1
+                }
+            },
+            viewControl: {
+                autoRotate: false
+            },
+            silent: true
+        },
+        series: series
+    });
+    window.addEventListener('keydown', function () {
+        series.forEach(function (series, idx) {
+            myChart.dispatchAction({
+                type: 'lines3DToggleEffect',
+                seriesIndex: idx
+            });
+        })
+    });
+});
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+</script>
+</body>
+
+<!-- END BODY -->
+
+</html>
